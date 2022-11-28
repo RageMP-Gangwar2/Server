@@ -1,0 +1,527 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: Raleway-Regular;
+    src: url('../fonts/raleway/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: Raleway-Black;
+    src: url('../fonts/raleway/Raleway-Black.ttf');
+}
+
+@font-face {
+    font-family: Raleway-SemiBold;
+    src: url('../fonts/raleway/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Raleway-Bold;
+    src: url('../fonts/raleway/Raleway-Bold.ttf');
+}
+
+* {
+    overflow: hidden;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Poppins-Regular, sans-serif;
+    background-color: transparent;
+    background: transparent;
+    background-image: transparent;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.title-garage {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-weight: 100;
+    top: 15px;
+    z-index: 99999;
+    right: 310px;
+}
+
+.subtitle-garage {
+    position: absolute;
+    font-size: 15px;
+    color: rgb(187, 187, 187);
+    line-height: 1.2;
+    text-align: center;
+    display: block;
+    top: 50px;
+    z-index: 99999;
+    max-width: 350px;
+    right: 677px;
+}
+
+.container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 950px;
+    height: 650px;
+    top: 50%;
+    left: 50%;
+    background: rgba(17, 12, 16, 0.925);
+    border-radius: 25px;
+}
+
+.garagetext {
+    position: absolute;
+    font-family: 'GilRoyBold', arial;
+    transform: translate(-50%, -50%);
+    top: 3%;
+    left: 31%;
+    font-size: 36px;
+    color: white;
+    width: 57%;
+}
+
+.rectengle1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 86px;
+    height: 3px;
+    top: 9.5%;
+    left: 7%;
+    background-image: linear-gradient(90deg, #3F16B5 0%, #168DB5 100%);
+    ;
+    border-radius: 20px;
+}
+
+.rectengle2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 3px;
+    top: 9.5%;
+    left: 14.9%;
+    background: #168DB5;
+    border-radius: 20px;
+}
+
+.infotext {
+    position: absolute;
+    font-family: 'GilRoySemiBold', arial;
+    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 17.5%;
+    font-size: 80%;
+    color: white;
+    opacity: 50%;
+    width: 30%;
+}
+
+.vehiclecontainer1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 13%;
+    width: 200px;
+    height: 130px;
+    background: rgba(42, 38, 50, 0.9);
+    border-radius: 5px;
+    z-index: 9;
+}
+
+#auto1level {
+    position: absolute;
+    top: 25vh;
+    left: 3%;
+    font-family: 'GilRoySemiBold', arial;
+    color: rgb(255, 255, 255);
+    z-index: 99999;
+}
+
+#auto2level {
+    position: absolute;
+    top: 25vh;
+    left: 26%;
+    font-family: 'GilRoySemiBold', arial;
+    color: rgb(255, 255, 255);
+    z-index: 99999;
+}
+
+#auto3level {
+    position: absolute;
+    top: 25vh;
+    left: 49%;
+    font-family: 'GilRoySemiBold', arial;
+    color: rgb(255, 255, 255);
+    z-index: 99999;
+}
+
+#auto4level {
+    position: absolute;
+    top: 25vh;
+    left: 72%;
+    font-family: 'GilRoySemiBold', arial;
+    color: rgb(255, 255, 255);
+    z-index: 99999;
+}
+
+#auto5level {
+    position: absolute;
+    top: 39.4vh;
+    left: 3%;
+    font-family: 'GilRoySemiBold', arial;
+    color: rgb(255, 255, 255);
+    z-index: 99999;
+}
+
+#auto6level {
+    position: absolute;
+    top: 39.4vh;
+    left: 26%;
+    font-family: 'GilRoySemiBold', arial;
+    color: rgb(255, 255, 255);
+    z-index: 99999;
+}
+
+#auto7level {
+    position: absolute;
+    top: 39.4vh;
+    left: 49%;
+    font-family: 'GilRoySemiBold', arial;
+    color: rgb(255, 255, 255);
+    z-index: 99999;
+}
+
+#auto8level {
+    position: absolute;
+    top: 39.4vh;
+    left: 72%;
+    font-family: 'GilRoySemiBold', arial;
+    color: rgb(255, 255, 255);
+    z-index: 99999;
+}
+
+#auto9level {
+    position: absolute;
+    top: 54vh;
+    left: 3%;
+    font-family: 'GilRoySemiBold', arial;
+    color: rgb(255, 255, 255);
+    z-index: 99999;
+}
+
+#auto10level {
+    position: absolute;
+    top: 54vh;
+    left: 26%;
+    font-family: 'GilRoySemiBold', arial;
+    color: rgb(255, 255, 255);
+    z-index: 99999;
+}
+
+#auto11level {
+    position: absolute;
+    top: 54vh;
+    left: 49%;
+    font-family: 'GilRoySemiBold', arial;
+    color: rgb(255, 255, 255);
+    z-index: 99999;
+}
+
+#auto12level {
+    position: absolute;
+    top: 54vh;
+    left: 72%;
+    font-family: 'GilRoySemiBold', arial;
+    color: rgb(255, 255, 255);
+    z-index: 99999;
+}
+
+.auto1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 13%;
+    width: 150px;
+    height: 80px;
+    z-index: 9999;
+}
+
+.vehiclecontainer2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 36%;
+    width: 200px;
+    height: 130px;
+    background: rgba(42, 38, 50, 0.9);
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.auto2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 36%;
+    width: 150px;
+    height: 80px;
+    z-index: 9999;
+}
+
+.vehiclecontainer3 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 59%;
+    width: 200px;
+    height: 130px;
+    background: rgba(42, 38, 50, 0.9);
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.auto3 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 59%;
+    width: 150px;
+    height: 80px;
+    z-index: 9999;
+}
+
+.vehiclecontainer4 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 82%;
+    width: 200px;
+    height: 130px;
+    background: rgba(42, 38, 50, 0.9);
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.auto4 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 82%;
+    width: 150px;
+    height: 80px;
+    z-index: 9999;
+}
+
+.vehiclecontainer5 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 59%;
+    left: 13%;
+    width: 200px;
+    height: 130px;
+    background: rgba(42, 38, 50, 0.9);
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.auto5 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 59%;
+    left: 13%;
+    width: 150px;
+    height: 80px;
+    z-index: 9999;
+}
+
+.vehiclecontainer6 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 59%;
+    left: 36%;
+    width: 200px;
+    height: 130px;
+    background: rgba(42, 38, 50, 0.9);
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.auto6 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 58%;
+    left: 35%;
+    width: 170px;
+    height: 90px;
+    z-index: 9999;
+}
+
+.vehiclecontainer7 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 59%;
+    left: 59%;
+    width: 200px;
+    height: 130px;
+    background: rgba(42, 38, 50, 0.9);
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.auto7 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 58%;
+    left: 58%;
+    width: 170px;
+    height: 90px;
+    z-index: 9999;
+}
+
+.vehiclecontainer8 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 59%;
+    left: 82%;
+    width: 200px;
+    height: 130px;
+    background: rgba(42, 38, 50, 0.9);
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.auto8 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 59%;
+    left: 82%;
+    width: 150px;
+    height: 80px;
+    z-index: 9999;
+}
+
+.vehiclecontainer9 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 83%;
+    left: 13%;
+    width: 200px;
+    height: 130px;
+    background: rgba(42, 38, 50, 0.9);
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.auto9 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 83%;
+    left: 13%;
+    width: 150px;
+    height: 80px;
+    z-index: 9999;
+}
+
+.vehiclecontainer10 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 83%;
+    left: 36%;
+    width: 200px;
+    height: 130px;
+    background: rgba(42, 38, 50, 0.9);
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.auto10 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 83%;
+    left: 36%;
+    width: 150px;
+    height: 80px;
+    z-index: 9999;
+}
+
+.vehiclecontainer11 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 83%;
+    left: 59%;
+    width: 200px;
+    height: 130px;
+    background: rgba(42, 38, 50, 0.9);
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.auto11 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 82%;
+    left: 58%;
+    width: 170px;
+    height: 90px;
+    z-index: 9999;
+}
+
+.vehiclecontainer12 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 83%;
+    left: 82%;
+    width: 200px;
+    height: 130px;
+    background: rgba(42, 38, 50, 0.9);
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.auto12 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 83%;
+    left: 82%;
+    width: 150px;
+    height: 80px;
+    z-index: 9999;
+}
+
+.closebutton {
+    transition: 1s;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 8%;
+    left: 96%;
+    width: 45px;
+    height: 45px;
+}
+
+.closebutton:hover {
+    transition: 1s;
+    width: 55px;
+    height: 55px;
+}

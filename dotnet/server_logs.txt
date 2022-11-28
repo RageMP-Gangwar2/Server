@@ -1,0 +1,409 @@
+Initializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 13.11.2022 16:02:49
+Unable to load acl.xml
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting RageGW resource..
+RageGW: loading scripts.. found 1 script(s)
+RageGW: instantiating RageGW.Resources..
+RageGW: instantiating RageGW.Modules.Utils.Utils..
+RageGW: instantiating RageGW.Modules.Logger.Logger..
+RageGW: instantiating RageGW.Modules.Logger.LoggerEnums..
+RageGW: instantiating RageGW.Modules.LevelSystem.LevelSystem..
+RageGW: instantiating RageGW.Modules.GarageSystem.GarageSystem..
+RageGW: instantiating RageGW.Modules.Events.Events..
+RageGW: instantiating RageGW.Modules.Discord.DiscordStatus..
+RageGW: instantiating RageGW.Handler.TeamSelection..
+RageGW: instantiating RageGW.Handler.VehicleSelection..
+RageGW: instantiating RageGW.Handler.WeaponSwitch.WeaponSwitch..
+RageGW: instantiating RageGW.Handler.Login.LoginHandler..
+RageGW: instantiating RageGW.Handler.KeyHandler.KeyHandler..
+RageGW: instantiating RageGW.Handler.Commands.CommandsAdmin..
+RageGW: instantiating RageGW.Handler.Commands.CommandsUser..
+RageGW: instantiating RageGW.Handler.Blips.Blips..
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 5 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 3 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loaded 30 server events(s)
+RageGW: loading commands.. found 7 command(s)
+RageGW: loading commands.. found 4 command(s)
+RageGW: loaded 11 commands(s)
+RageGW: loading remote events.. found 2 remote event(s)
+RageGW: loading remote events.. found 1 remote event(s)
+RageGW: loading remote events.. found 1 remote event(s)
+RageGW: loading remote events.. found 2 remote event(s)
+RageGW: loading remote events.. found 1 remote event(s)
+RageGW: loaded 7 remote event(s)
+DiscordBot: 16:02:49 Discord     Discord.Net v3.8.1 (API v10)
+-> Resource RageGW started!
+Started! Waiting for connections..
+DiscordBot: 16:02:49 Gateway     Connecting
+DiscordBot: 16:02:50 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+DiscordBot: 16:02:50 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+DiscordBot: 16:02:50 Gateway     Connected
+DiscordBot: 16:02:51 Gateway     Ready
+DiscordBot: 16:13:09 Gateway     System.Exception: WebSocket connection was closed
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Eine vorhandene Verbindung wurde vom Remotehost geschlossen..
+ ---> System.Net.Sockets.SocketException (10054): Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.Socket+AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at int System.Net.Sockets.Socket+AwaitableSocketAsyncEventArgs.GetResult(short token)
+   at async ValueTask<int> System.Net.Security.SslStream.FillBufferAsync<TReadAdapter>(TReadAdapter adapter, int minSize)+InternalFillBufferAsync(?)
+   at async ValueTask<int> System.Net.Security.SslStream.ReadAsyncInternal<TReadAdapter>(TReadAdapter adapter, Memory<byte> buffer)
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async ValueTask<int> System.Net.Http.HttpConnection.ReadBufferedAsyncCore(Memory<byte> destination)
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async ValueTask<int> System.Net.Http.HttpConnection+RawConnectionStream.ReadAsync(Memory<byte> buffer, CancellationToken cancellationToken)
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async Task System.Net.WebSockets.ManagedWebSocket.EnsureBufferContainsAsync(int minimumRequiredBytes, CancellationToken cancellationToken, bool throwOnPrematureClosure)
+   at async ValueTask<TWebSocketReceiveResult> System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate<TWebSocketReceiveResultGetter, TWebSocketReceiveResult>(Memory<byte> payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at async ValueTask<TWebSocketReceiveResult> System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate<TWebSocketReceiveResultGetter, TWebSocketReceiveResult>(Memory<byte> payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at async Task Discord.Net.WebSockets.DefaultWebSocketClient.RunAsync(CancellationToken cancelToken)
+   --- End of inner exception stack trace ---
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+DiscordBot: 16:13:09 Gateway     Disconnecting
+DiscordBot: 16:13:09 Gateway     Disconnected
+DiscordBot: 16:13:10 Gateway     Connecting
+DiscordBot: 16:13:10 Gateway     System.Net.WebSockets.WebSocketException (0x80004005): Unable to connect to the remote server
+ ---> System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Eine vorhandene Verbindung wurde vom Remotehost geschlossen..
+ ---> System.Net.Sockets.SocketException (10054): Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.Socket+AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at int System.Net.Sockets.Socket+AwaitableSocketAsyncEventArgs.GetResult(short token)
+   at async Task System.Net.FixedSizeReader.ReadPacketAsync(Stream transport, AsyncProtocolRequest request)
+   at void System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at void System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at void System.Net.Security.SslStream.EndAuthenticateAsClient(IAsyncResult asyncResult)
+   at Task System.Net.Security.SslStream.AuthenticateAsClientAsync(string targetHost, X509CertificateCollection clientCertificates, SslProtocols enabledSslProtocols, bool checkCertificateRevocation)+(IAsyncResult iar) => { }
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   at async ValueTask<SslStream> System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at async ValueTask<SslStream> System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async ValueTask<ValueTuple<Socket, Stream, TransportContext, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, bool allowHttp2, CancellationToken cancellationToken)
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async ValueTask<ValueTuple<HttpConnection, HttpResponseMessage>> System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async ValueTask<(HttpConnectionBase connection, bool isNewConnection, HttpResponseMessage failureResponse)> System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async Task<HttpResponseMessage> System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, bool doRequestAuth, CancellationToken cancellationToken)
+   at async Task<HttpResponseMessage> System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at async Task System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken)
+   at Discord.Net.WebSockets.DefaultWebSocketClient.ConnectInternalAsync(String host)
+   at Discord.Net.WebSockets.DefaultWebSocketClient.ConnectAsync(String host)
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectAsync()
+   at Discord.WebSocket.DiscordSocketClient.OnConnectingAsync()
+   at Discord.ConnectionManager.ConnectAsync(CancellationTokenSource reconnectCancelToken)
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+DiscordBot: 16:13:10 Gateway     Disconnecting
+DiscordBot: 16:13:10 Gateway     Disconnected
+DiscordBot: 16:13:12 Gateway     Connecting
+DiscordBot: 16:13:13 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+DiscordBot: 16:13:13 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+DiscordBot: 16:13:13 Gateway     Connected
+DiscordBot: 16:13:13 Gateway     A Ready handler has thrown an unhandled exception.:
+System.Exception: Non-thread-safe API has been invoked out of main thread. Check NAPI.Task.Run. To ignore this, set "api-threading-debugging" to false in conf.json.
+   at Bootstrapper.EventInternalClass.OnThreadingException()
+   at GTANetworkMethods.Entity.DoesEntityExist(NetHandle entity)
+   at GTANetworkAPI.Entity.get_Exists()
+   at RageGW.Modules.Discord.DiscordStatus.BotIsReady() in C:\Users\danie\Desktop\RageMP-Gangwar\Backend\RageGW\RageGW\Modules\DiscordStatus\DiscordStatus.cs:line 67
+   at Discord.EventExtensions.InvokeAsync(AsyncEvent`1 eventHandler)
+   at Discord.WebSocket.DiscordSocketClient.TimeoutWrap(String name, Func`1 action)
+DiscordBot: 16:13:13 Gateway     Ready
+DiscordBot: 16:18:01 Gateway     System.Exception: WebSocket connection was closed
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Eine vorhandene Verbindung wurde vom Remotehost geschlossen..
+ ---> System.Net.Sockets.SocketException (10054): Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.Socket+AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at int System.Net.Sockets.Socket+AwaitableSocketAsyncEventArgs.GetResult(short token)
+   at async ValueTask<int> System.Net.Security.SslStream.FillBufferAsync<TReadAdapter>(TReadAdapter adapter, int minSize)+InternalFillBufferAsync(?)
+   at async ValueTask<int> System.Net.Security.SslStream.ReadAsyncInternal<TReadAdapter>(TReadAdapter adapter, Memory<byte> buffer)
+   at async ValueTask<int> System.Net.Http.HttpConnection.ReadBufferedAsyncCore(Memory<byte> destination)
+   at async ValueTask<int> System.Net.Http.HttpConnection+RawConnectionStream.ReadAsync(Memory<byte> buffer, CancellationToken cancellationToken)
+   at async Task System.Net.WebSockets.ManagedWebSocket.EnsureBufferContainsAsync(int minimumRequiredBytes, CancellationToken cancellationToken, bool throwOnPrematureClosure)
+   at async ValueTask<TWebSocketReceiveResult> System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate<TWebSocketReceiveResultGetter, TWebSocketReceiveResult>(Memory<byte> payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at async ValueTask<TWebSocketReceiveResult> System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate<TWebSocketReceiveResultGetter, TWebSocketReceiveResult>(Memory<byte> payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at async Task Discord.Net.WebSockets.DefaultWebSocketClient.RunAsync(CancellationToken cancelToken)
+   --- End of inner exception stack trace ---
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+DiscordBot: 16:18:01 Gateway     Disconnecting
+DiscordBot: 16:18:01 Gateway     Disconnected
+DiscordBot: 16:18:02 Gateway     Connecting
+DiscordBot: 16:18:03 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+DiscordBot: 16:18:03 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+DiscordBot: 16:18:03 Gateway     Connected
+DiscordBot: 16:18:04 Gateway     A Ready handler has thrown an unhandled exception.:
+System.Exception: Non-thread-safe API has been invoked out of main thread. Check NAPI.Task.Run. To ignore this, set "api-threading-debugging" to false in conf.json.
+   at Bootstrapper.EventInternalClass.OnThreadingException()
+   at GTANetworkMethods.Entity.DoesEntityExist(NetHandle entity)
+   at GTANetworkAPI.Entity.get_Exists()
+   at RageGW.Modules.Discord.DiscordStatus.BotIsReady() in C:\Users\danie\Desktop\RageMP-Gangwar\Backend\RageGW\RageGW\Modules\DiscordStatus\DiscordStatus.cs:line 67
+   at Discord.EventExtensions.InvokeAsync(AsyncEvent`1 eventHandler)
+   at Discord.WebSocket.DiscordSocketClient.TimeoutWrap(String name, Func`1 action)
+DiscordBot: 16:18:04 Gateway     Ready
+DiscordBot: 16:18:44 Gateway     System.Exception: WebSocket connection was closed
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Eine vorhandene Verbindung wurde vom Remotehost geschlossen..
+ ---> System.Net.Sockets.SocketException (10054): Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.Socket+AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at int System.Net.Sockets.Socket+AwaitableSocketAsyncEventArgs.GetResult(short token)
+   at async ValueTask<int> System.Net.Security.SslStream.FillBufferAsync<TReadAdapter>(TReadAdapter adapter, int minSize)+InternalFillBufferAsync(?)
+   at async ValueTask<int> System.Net.Security.SslStream.ReadAsyncInternal<TReadAdapter>(TReadAdapter adapter, Memory<byte> buffer)
+   at async ValueTask<int> System.Net.Http.HttpConnection.ReadBufferedAsyncCore(Memory<byte> destination)
+   at async ValueTask<int> System.Net.Http.HttpConnection+RawConnectionStream.ReadAsync(Memory<byte> buffer, CancellationToken cancellationToken)
+   at async Task System.Net.WebSockets.ManagedWebSocket.EnsureBufferContainsAsync(int minimumRequiredBytes, CancellationToken cancellationToken, bool throwOnPrematureClosure)
+   at async ValueTask<TWebSocketReceiveResult> System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate<TWebSocketReceiveResultGetter, TWebSocketReceiveResult>(Memory<byte> payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at async ValueTask<TWebSocketReceiveResult> System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate<TWebSocketReceiveResultGetter, TWebSocketReceiveResult>(Memory<byte> payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at async Task Discord.Net.WebSockets.DefaultWebSocketClient.RunAsync(CancellationToken cancelToken)
+   --- End of inner exception stack trace ---
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+DiscordBot: 16:18:44 Gateway     Disconnecting
+DiscordBot: 16:18:44 Gateway     Disconnected
+DiscordBot: 16:18:45 Gateway     Connecting
+DiscordBot: 16:18:51 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+DiscordBot: 16:18:51 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+DiscordBot: 16:18:51 Gateway     Connected
+DiscordBot: 16:18:51 Gateway     A Ready handler has thrown an unhandled exception.:
+System.Exception: Non-thread-safe API has been invoked out of main thread. Check NAPI.Task.Run. To ignore this, set "api-threading-debugging" to false in conf.json.
+   at Bootstrapper.EventInternalClass.OnThreadingException()
+   at GTANetworkMethods.Entity.DoesEntityExist(NetHandle entity)
+   at GTANetworkAPI.Entity.get_Exists()
+   at RageGW.Modules.Discord.DiscordStatus.BotIsReady() in C:\Users\danie\Desktop\RageMP-Gangwar\Backend\RageGW\RageGW\Modules\DiscordStatus\DiscordStatus.cs:line 67
+   at Discord.EventExtensions.InvokeAsync(AsyncEvent`1 eventHandler)
+   at Discord.WebSocket.DiscordSocketClient.TimeoutWrap(String name, Func`1 action)
+DiscordBot: 16:18:51 Gateway     Ready
+DiscordBot: 16:35:20 Gateway     System.Exception: WebSocket connection was closed
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Eine vorhandene Verbindung wurde vom Remotehost geschlossen..
+ ---> System.Net.Sockets.SocketException (10054): Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+   --- End of inner exception stack trace ---
+   at void System.Net.Sockets.Socket+AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at int System.Net.Sockets.Socket+AwaitableSocketAsyncEventArgs.GetResult(short token)
+   at async ValueTask<int> System.Net.Security.SslStream.FillBufferAsync<TReadAdapter>(TReadAdapter adapter, int minSize)+InternalFillBufferAsync(?)
+   at async ValueTask<int> System.Net.Security.SslStream.ReadAsyncInternal<TReadAdapter>(TReadAdapter adapter, Memory<byte> buffer)
+   at async ValueTask<int> System.Net.Http.HttpConnection.ReadBufferedAsyncCore(Memory<byte> destination)
+   at async ValueTask<int> System.Net.Http.HttpConnection+RawConnectionStream.ReadAsync(Memory<byte> buffer, CancellationToken cancellationToken)
+   at async Task System.Net.WebSockets.ManagedWebSocket.EnsureBufferContainsAsync(int minimumRequiredBytes, CancellationToken cancellationToken, bool throwOnPrematureClosure)
+   at async ValueTask<TWebSocketReceiveResult> System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate<TWebSocketReceiveResultGetter, TWebSocketReceiveResInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 14.11.2022 10:28:53
+Unable to load acl.xml
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting RageGW resource..
+RageGW: loading scripts.. found 1 script(s)
+RageGW: instantiating RageGW.Resources..
+RageGW: instantiating RageGW.Modules.Utils.Utils..
+RageGW: instantiating RageGW.Modules.Logger.Logger..
+RageGW: instantiating RageGW.Modules.Logger.LoggerEnums..
+RageGW: instantiating RageGW.Modules.LevelSystem.LevelSystem..
+RageGW: instantiating RageGW.Modules.GarageSystem.GarageSystem..
+RageGW: instantiating RageGW.Modules.Events.Events..
+RageGW: instantiating RageGW.Modules.DiscordWebhook.DiscordWebhook..
+RageGW: instantiating RageGW.Modules.DiscordWebhook.Webhooks..
+RageGW: instantiating RageGW.Modules.Discord.DiscordStatus..
+RageGW: instantiating RageGW.Handler.Blips..
+RageGW: instantiating RageGW.Handler.FFASelection..
+RageGW: instantiating RageGW.Handler.TeamSelection..
+RageGW: instantiating RageGW.Handler.VehicleSelection..
+RageGW: instantiating RageGW.Handler.WeaponSwitch.WeaponSwitch..
+RageGW: instantiating RageGW.Handler.Login.LoginHandler..
+RageGW: instantiating RageGW.Handler.KeyHandler.KeyHandler..
+RageGW: instantiating RageGW.Handler.Commands.CommandsAdmin..
+RageGW: instantiating RageGW.Handler.Commands.CommandsUser..
+RageGW: instantiating RageGW.Handler.ChatHandler.ChatHandler..
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 5 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 3 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 1 server event(s)
+RageGW: loaded 31 server events(s)
+RageGW: loading commands.. found 8 command(s)
+RageGW: loading commands.. found 5 command(s)
+RageGW: loaded 13 commands(s)
+RageGW: loading remote events.. found 2 remote event(s)
+RageGW: loading remote events.. found 1 remote event(s)
+RageGW: loading remote events.. found 1 remote event(s)
+RageGW: loading remote events.. found 1 remote event(s)
+RageGW: loading remote events.. found 2 remote event(s)
+RageGW: loading remote events.. found 2 remote event(s)
+RageGW: loaded 9 remote event(s)
+DiscordBot: 10:28:55 Discord     Discord.Net v3.8.1 (API v10)
+-> Resource RageGW started!
+Started! Waiting for connections..
+DiscordBot: 10:28:55 Gateway     Connecting
+DiscordBot: 10:28:56 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+DiscordBot: 10:28:56 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+DiscordBot: 10:28:56 Gateway     Connected
+DiscordBot: 10:28:56 Gateway     Ready
+UNHANDLED EXCEPTION IN COMMAND dv FOR RESOURCE RageGW
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void RageGW.Handler.Commands.CommandsAdmin.cmd_dv(Player player) in C:/Users/danie/Desktop/RageMP-Gangwar/backend/RageGW/RageGW/Handler/Commands/CommandsAdmin.cs:line 166
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, BinderInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 15.11.2022 13:54:20
+Unable to load acl.xml
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting RageGW resource..
+RageGW: loading scripts.. found 1 script(s)
+RageGW: instantiating RageGW.Resources..
+RageGW: instantiating RageGW.Modules.Utils.Utils..
+RageGW: instantiating RageGW.Modules.Logger.Logger..
+RageGW: instantiating RageGW.Modules.Logger.LoggerEnums..
+RageGW: instantiating RageGW.Modules.LevelSystem.LevelSystem..
+RageGW: instantiating RageGW.Modules.GarageSystem.GarageSystem..
+RageGW: instantiating RageGW.Modules.Events.Events..
+RageGW: instantiating RageGW.Modules.DiscordWebhook.DiscordWebhook..
+RageGW: instantiating RageGW.Modules.DiscordWebhook.Webhooks..
+RageGW: instantiating RageGW.Modules.Discord.DiscordStatus..
+RageGW: instantiating RageGW.Handler.Blips..
+RageGW: instantiating RageGW.Handler.AufsatzSelection..
+RageGW: instantiating RageGW.Handler.FFASelection..
+RageGW: instantiating RageGW.Handler.TeamSelection..
+RageGW: instantiating RageGW.Handler.VehicleSelection..
+RageGW: instantiating RageGW.Handler.WeaponSwitch.WeaponSwitch..
+RageGW: instantiating RageGW.Handler.Login.LoginHandler..
+RageGW: instantiating RageGW.Handler.KeyHandler.KeyHandler..
+RageGW: instantiating RageGW.Handler.Commands.CommandsAdmin..
+RageGW: instantiating RageGW.Handler.Commands.CommandsUser..
+RageGW: instantiating RageGW.Handler.ChatHandler.ChatHandler..
+RageGW: instantiating RageGW.Handler.AntiCheatHandler.AntiCheatHandler..
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 6 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 3 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 1 server event(s)
+RageGW: loading server events.. found 3 server event(s)
+RageGW: loaded 41 server events(s)
+RageGW: loading commands.. found 10 command(s)
+RageGW: loading commands.. found 5 command(s)
+RageGW: loaded 15 commands(s)
+RageGW: loading remote events.. found 4 remote event(s)
+RageGW: loading remote events.. found 1 remote event(s)
+RageGW: loading remote events.. found 1 remote event(s)
+RageGW: loading remote events.. found 1 remote event(s)
+RageGW: loading remote events.. found 2 remote event(s)
+RageGW: loading remote events.. found 7 remote event(s)
+RageGW: loaded 16 remote event(s)
+DiscordBot: 13:54:21 Discord     Discord.Net v3.8.1 (API v10)
+DiscordBot: 13:54:21 Gateway     Connecting
+-> Resource RageGW started!
+Started! Waiting for connections..
+DiscordBot: 13:54:22 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+DiscordBot: 13:54:22 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+DiscordBot: 13:54:22 Gateway     Connected
+DiscordBot: 13:54:23 Gateway     Ready
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.FormatException: Format specifier was invalid.
+   at int Number.GetFloatingPointMaxDigitsAndPrecision(char fmt, ref int precision, NumberFormatInfo info, out bool isSignificantDigits)
+   at string Number.FormatDouble(ref ValueStrinInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 16.11.2022 20:56:00
+Unable to load acl.xml
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting RageGW resource..
+RageGW: loading scripts.. found 1 script(s)
+RageGW: instantiating RageGW.Resources..
+RageGW: instantiating RageGW.Modules.Utils.Utils..
+RageGW: instantiating RageGW.Modules.Logger.Logger..
+RageGW: instantiating RageGW.Modules.Logger.LoggerEnums..
+RageGW: instantiating RageGW.Modules.LevelSystem.LevelSystem..
+RageGW: instantiating RageGW.Modules.GarageSystem.GarageSystem..
+RageGW: instantiating RageGW.Modules.Events.Events..
+RageGW: instantiating RageGW.Modules.DiscordWebhook.DiscordWebhook..
+RageGW: instantiating RageGW.Modules.DiscordWebhook.Webhooks..
+RageGW: instantiating RageGW.Modules.Discord.DiscordStatus..
+RageGW: instantiating RageGW.Handler.Blips..
+RageGW: instantiating RageGW.Handler.AufsatzSelection..
+RageGW: instantiating RageGW.Handler.FFASelection..
+RageGW: instantiating RageGW.Handler.TeamSelection..
+RageGW: instantiating RageGW.Handler.VehicleSelection..
+RageGW: instantiating RageGW.Handler.WeaponSwitch.WeaponSwitch..
+RageGW: instantiating RageGW.Handler.Login.LoginHandler..
+RageGW: instantiating RageGW.Handler.KeyHandler.KeyHandler..
+RageGW: instantiating RageGW.Handler.Commands.CommandsAdmin..
+RageGW: instantiating RageGW.Handler.Commands.CommandsUser..
+RageGW: instantiating RageGW.Handler.ChatHandler.ChatHandler..
+RageGW: instantiating RageGW.Handler.AntiCheatHandler.AntiCheatHandler..
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 6 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 3 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 2 server event(s)
+RageGW: loading server events.. found 1 server event(s)
+RageGW: loading server events.. found 3 server event(s)
+RageGW: loaded 41 server events(s)
+RageGW: loading commands.. found 11 command(s)
+RageGW: loading commands.. found 5 command(s)
+RageGW: loaded 16 commands(s)
+RageGW: loading remote events.. found 4 remote event(s)
+RageGW: loading remote events.. found 1 remote event(s)
+RageGW: loading remote events.. found 1 remote event(s)
+RageGW: loading remote events.. found 1 remote event(s)
+RageGW: loading remote events.. found 2 remote event(s)
+RageGW: loading remote events.. found 7 remote event(s)
+RageGW: loaded 16 remote event(s)
+DiscordBot: 20:56:01 Discord     Discord.Net v3.8.1 (API v10)
+DiscordBot: 20:56:01 Gateway     Connecting
+-> Resource RageGW started!
+Started! Waiting for connections..
+DiscordBot: 20:56:03 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+DiscordBot: 20:56:03 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+DiscordBot: 20:56:03 Gateway     Connected
+DiscordBot: 20:56:03 Gateway     Ready
+UNHANDLED EXCEPTION IN COMMAND dv FOR RESOURCE RageGW
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void RageGW.Handler.Commands.CommandsAdmin.cmd_dv(Player player) in C:/Users/danie/Documents/

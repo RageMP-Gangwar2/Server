@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/383d1a29e0.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+<div class="background"></div>
+<img class="closebutton" src="img/close.png" onclick="closeTeamSelect()">
+
+<div class="title-frak">Auswahl <span style="color: red;">Fraktion</span></div>
+
+<div class="subtitle-frak">Ihr kannst du deine Fraktion ausw&auml;hlen, die du Spielen willst.</div>
+
+<div class="yakuza">
+    <img class="yakuza-img" src="img/yakuza.PNG">
+    <button class="yakuza-button" onclick="selectTeam(1)">Betreten</button>
+</div>
+
+<div class="grove">
+    <img class="grove-img" src="img/grove.PNG">
+    <button class="grove-button" onclick="selectTeam(2)">Betreten</button>
+</div>
+
+<div class="aztecas">
+    <img class="aztecas-img" src="img/aztecas.PNG">
+    <button class="aztecas-button" onclick="selectTeam(3)">Betreten</button>
+</div>
+
+<div class="hoover">
+    <img class="hoover-img" src="img/hoover.PNG">
+    <button class="hoover-button" onclick="selectTeam(4)">Betreten</button>
+</div>
+
+<div class="lcn">
+    <img class="lcn-img" src="img/lcn.PNG">
+    <button class="lcn-button" onclick="selectTeam(5)">Betreten</button>
+</div>
+
+<div class="ballas">
+    <img class="ballas-img" src="img/ballas.PNG">
+    <button class="ballas-button" onclick="selectTeam(6)">Betreten</button>
+</div>
+</body>
+
+<script>
+    function closeTeamSelect() {
+        hideTeamSelect();
+    }
+
+    function selectTeam(teamId) {
+        mp.trigger("Client:TeamBrowser:selectTeam", teamId)
+        hideTeamSelect();
+    }
+
+    function hideTeamSelect() {
+        mp.trigger("Client:TeamBrowser:destroyBrowser");
+    }
+</script>

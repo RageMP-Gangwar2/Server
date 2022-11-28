@@ -1,0 +1,10 @@
+{
+	"maxplayers" : 50,
+	"name" : "Gangwar | discord.gg/uTYbxh3zmf", 
+	"gamemode" : "Gangwar", 
+	"stream-distance" : 200.0,
+	"announce" : true,
+	"language" : "de",
+	"csharp" : "enabled",
+	"port": 22005
+}

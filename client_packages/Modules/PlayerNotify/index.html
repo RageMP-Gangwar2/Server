@@ -1,0 +1,35 @@
+<!-- by UleqitGod. -->
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="notifications">
+            <!--div class="notification" style="border-left: 3px red solid;">
+                <p id="title" style="color: red">Test Test Test Test Test Test Test Test Test</p>
+                <p id="text">Test Test Test Test Test Test Test Test Test</p>
+            </div-->
+        </div>
+        <script>
+            function sendMessage(title, message, color, time) {
+                var $html = $(
+                    `
+                    <div class="notification" style="border-left: 3px ` + color + ` solid;">
+                        <p id="title" style="color: ` + color + `;">` + title + `</p>
+                        <p id="text">` + message + `</p>
+                    </div>
+                    `
+                );
+
+                $(".notifications").prepend($html).fadeIn();
+                $html.fadeOut(0);
+                $html.fadeIn(1000);
+
+                setTimeout(() => {
+                    $html.slideUp(500);
+                }, time);
+            }
+        </script>
+    </body>
+</html>

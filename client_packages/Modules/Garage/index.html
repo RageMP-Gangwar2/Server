@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/383d1a29e0.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./index.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title-garage">Fraktions <span style="color: red;">Garage</span></div>
+
+        <div class="subtitle-garage">Ihr kannst du dir Fahrzeuge ausparken.</div>
+
+        <img class="closebutton" src="img/unknown.png" onclick="closez()">
+        <div class="vehiclecontainer1"></div>
+        <img class="auto1" src="img/800px_bati_removebg_preview_1.PNG" onclick="selectVehicle(1)">
+        <div id="auto1level">Level: 1</div>
+
+        <div class="vehiclecontainer2"></div>
+        <img class="auto2" src="img/800px_primo2_removebg_preview_1.PNG" onclick="selectVehicle(2)">
+        <div id="auto2level">Level: 1</div>
+
+        <div class="vehiclecontainer3"></div>
+        <img class="auto3" src="img/800px_sultan_1.PNG" onclick="selectVehicle(3)">
+        <div id="auto3level">Level: 5</div>
+
+        <div class="vehiclecontainer4"></div>
+        <img class="auto4" src="img/800px_dominator_1.PNG" onclick="selectVehicle(4)">
+        <div id="auto4level">Level: 5</div>
+
+        <div class="vehiclecontainer5"></div>
+        <img class="auto5" src="img/800px_elegy_removebg_preview_1.PNG" onclick="selectVehicle(5)">
+        <div id="auto5level">Level: 10</div>
+
+        <div class="vehiclecontainer6"></div>
+        <img class="auto6" src="img/800px_drafter_1.PNG" onclick="selectVehicle(6)">
+        <div id="auto6level">Level: 15</div>
+
+        <div class="vehiclecontainer7"></div>
+        <img class="auto7" src="img/jugular_1.PNG" onclick="selectVehicle(7)">
+        <div id="auto7level">Level: 15</div>
+
+        <div class="vehiclecontainer8"></div>
+        <img class="auto8" src="img/i_wagen_gtaoe_front_1.PNG" onclick="selectVehicle(8)">
+        <div id="auto8level">Level: 25</div>
+
+
+        <div class="vehiclecontainer9"></div>
+        <img class="auto9" src="img/omnisegt_gtaoe_front_6.PNG" onclick="selectVehicle(9)">
+        <div id="auto9level">Level: 25</div>
+
+        <div class="vehiclecontainer10"></div>
+        <img class="auto10" src="img/800px_cyclone_removebg_preview_1.PNG" onclick="selectVehicle(10)">
+        <div id="auto10level">Level: 30</div>
+
+        <div class="vehiclecontainer11"></div>
+        <img class="auto11" src="img/790px_emerus_1.PNG" onclick="selectVehicle(11)">
+        <div id="auto11level">Level: 35</div>
+    </div>
+
+</body>
+
+<script>
+
+    function closez() {
+        mp.trigger("Client:garageBrowser:destroyBrowser");
+    }
+
+    function selectVehicle(vehicleid) {
+        mp.trigger("Client:garageBrowser:selectVehicle", vehicleid)
+        hideVehicleSelect();
+    }
+
+    function hideVehicleSelect() {
+        mp.trigger("Client:garageBrowser:destroyBrowser");
+    }
+</script>
